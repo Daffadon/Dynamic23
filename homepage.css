@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+header {
+  height: 12.4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5em;
+}
+.nav-logo {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.divider {
+  width: 5px;
+  height: 5em;
+  background: linear-gradient(to bottom, #04a3d3 50%, #ef5a0f 50%);
+}
+nav {
+  width: 50%;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+nav ul a {
+  text-align: center;
+  color: #163269;
+  /* flex: 1; */
+  text-decoration: none;
+}
+#selected {
+  color: #ef5a0f;
+}
+#loop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+#pict-slide {
+  width: 100%;
+  object-fit: fill;
+}
+#jumbotron {
+  position: relative;
+}
+#back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 4em;
+  top: 50%;
+  width: 5em;
+  height: 5em;
+  border-radius: 50px;
+  background-color: #ffffffbf;
+  cursor: pointer;
+}
+#next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 4em;
+  top: 50%;
+  width: 5em;
+  height: 5em;
+  border-radius: 50px;
+  background-color: #ffffffbf;
+  cursor: pointer;
+}
+
+#section-wrapper {
+  position: relative;
+  top: -8em;
+}
+
+#stakeholder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#stakeholder .container {
+  padding: 0 20px;
+  padding-top: 30px;
+  width: 60%;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+#stakeholder .title {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 36px;
+}
+#stakeholder .title span {
+  background: #ef5a0f;
+  color: white;
+  padding: 0 10px;
+}
+.container-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.item-container {
+  flex: 1;
+}
+.title-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.stake-title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.title-container h2 {
+  padding: 10px 0;
+  width: 10em;
+  max-width: 10em;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  border-left: 4px solid #ef5a0f;
+}
+
+#announcement {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#announcement .container {
+  width: 60%;
+}
+
+.announce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.announc-title {
+  color: #055088;
+  font-size: 40px;
+  font-weight: 700;
+  /* width: 100%; */
+}
+#line-announce {
+  /* width: 50em; */
+  background: #ef5a0f;
+  height: 3px;
+  width: 100%;
+}
+.desc-announce {
+  font-size: 20px;
+  font-weight: 400;
+  color: #d61b23;
+}
+
+#category-announce {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #c3c3c3;
+}
+#category-announce p {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid #c3c3c3;
+}
+#cat-selected {
+  background: #ef5a0f;
+  color: white;
+  border: none;
+}
+
+.announce-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  gap: 40px;
+}
+.announce-news img {
+  width: 100%;
+}
+.announce-news article {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 40vh;
+}
+.announce-desc {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.context {
+  margin-right: 3px;
+  font-weight: 700;
+  color: #919191;
+}
+
+.announce-news button {
+  align-self: flex-start;
+  background-color: white;
+  margin-top: 40px;
+  border: 1px solid #ef5a0f;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ef5a0f;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.see-all-container {
+  width: 60%;
+}
+.see-all {
+  text-align: right;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ef5a0f;
+}
