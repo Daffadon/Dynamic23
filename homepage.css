@@ -5,11 +5,15 @@
   font-family: "Rubik", sans-serif;
 }
 header {
+  width: 100%;
+  position: fixed;
   height: 12.4vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 5em;
+  z-index: 100;
+  padding-left: 10em;
+  background: white;
 }
 .nav-logo {
   height: 10vh;
@@ -38,8 +42,12 @@ nav ul {
 nav ul a {
   text-align: center;
   color: #163269;
-  /* flex: 1; */
+  flex: 1;
   text-decoration: none;
+  transition: all 200ms;
+}
+nav ul a:hover {
+  color: #ef5a0f;
 }
 #selected {
   color: #ef5a0f;
@@ -49,11 +57,13 @@ nav ul a {
   justify-content: center;
   align-items: center;
   width: 3em;
+  min-width: 3em;
   height: 3em;
   border-radius: 50px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 #pict-slide {
+  margin-top: 13vh;
   width: 100%;
   object-fit: fill;
 }
@@ -136,6 +146,7 @@ nav ul a {
   display: flex;
   justify-content: center;
 }
+
 .title-container h2 {
   padding: 10px 0;
   width: 10em;
@@ -195,7 +206,15 @@ nav ul a {
   border-radius: 10px;
   padding: 10px 15px;
   border: 1px solid #c3c3c3;
+  transition: 200ms;
 }
+
+#category-announce p:hover {
+  background: #ef5a0f;
+  color: white;
+  border: 1px solid #ef5a0f;
+}
+
 #cat-selected {
   background: #ef5a0f;
   color: white;
@@ -243,7 +262,13 @@ nav ul a {
   padding: 10px 10px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 200ms;
 }
+.announce-news button:hover {
+  background-color: #ef5a0f;
+  color: white;
+}
+
 .see-all-container {
   width: 70%;
 }
@@ -253,6 +278,11 @@ nav ul a {
   font-weight: 500;
   font-size: 20px;
   color: #ef5a0f;
+  cursor: pointer;
+  transition: 200ms;
+}
+.see-all:hover {
+  color: #163269;
 }
 
 .agenda-desc-title {
@@ -345,7 +375,12 @@ nav ul a {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
   padding: 20px 20px;
   border-radius: 10px;
+  transition: 200ms;
 }
+.list-ps img:hover {
+  background: #055088;
+}
+
 #pic {
   position: relative;
   margin-top: 4em;
@@ -353,6 +388,8 @@ nav ul a {
 
 .pic-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow-x: hidden;
 }
 .pic-container img {
@@ -369,6 +406,11 @@ nav ul a {
   padding: 15px 30px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 200ms;
+}
+.facilities:hover {
+  color: #ef5a0f;
+  background: white;
 }
 
 footer {
@@ -405,7 +447,14 @@ footer {
   font-weight: 400;
   margin-bottom: 1em;
   color: #8d8d8d;
+  cursor: pointer;
+  transition: 200ms;
 }
+
+.footer-content-wrapper p:hover {
+  color: white;
+}
+
 .footer-cpr {
   width: 100%;
   display: flex;
