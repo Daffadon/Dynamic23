@@ -12,7 +12,7 @@ header {
   align-items: center;
   justify-content: space-around;
   z-index: 100;
-  padding-left: 10em;
+  padding-left: 3em;
   background: white;
 }
 .nav-logo {
@@ -48,6 +48,11 @@ nav ul a {
 }
 nav ul a:hover {
   color: #ef5a0f;
+}
+.side-bar {
+  margin-left: 15em;
+  width: 2.5em;
+  display: none;
 }
 #selected {
   color: #ef5a0f;
@@ -114,7 +119,6 @@ nav ul a:hover {
   background: white;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 }
-
 #stakeholder .title {
   margin-top: 5px;
   font-weight: 600;
@@ -130,7 +134,7 @@ nav ul a:hover {
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 .container-item img {
   width: 120px;
@@ -246,7 +250,7 @@ nav ul a:hover {
   margin-top: 15px;
   font-weight: 500;
   font-size: 20px;
-  min-height: 7vh;
+  min-height: 15vh;
 }
 .context {
   margin-right: 3px;
@@ -337,7 +341,6 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 #program-studi {
@@ -446,7 +449,7 @@ footer {
   font-weight: 700;
   font-size: 17px;
   border-bottom: 2px solid #ef5a0f;
-  height: 3vh;
+  height: 4vh;
   margin-bottom: 2em;
 }
 .footer-content-wrapper p {
@@ -478,6 +481,16 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+  header {
+    padding-left: 0;
+  }
+  nav {
+    display: none;
+  }
+  .side-bar {
+    margin-left: 3em;
+    display: block;
+  }
   #stakeholder {
     top: 1em;
   }
@@ -581,6 +594,15 @@ footer {
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
+  header {
+    padding-left: 0;
+  }
+  nav {
+    display: none;
+  }
+  .side-bar {
+    display: block;
+  }
   #stakeholder {
     top: 1em;
   }
@@ -637,7 +659,7 @@ footer {
     margin-top: 4em;
   }
   .announce-desc {
-    min-height: 10vh;
+    min-height: 20vh;
   }
   .ps-container {
     min-width: 90%;
@@ -675,8 +697,11 @@ footer {
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1500px) {
+  header {
+    padding-left: 1em;
+  }
   .announce-desc {
-    min-height: 11vh;
+    min-height: 20vh;
   }
   .stake-title h3 {
     min-width: 10em;
